@@ -217,3 +217,11 @@
 {"message":"\u001b[0mGET /main.js \u001b[36m304 \u001b[0m5.160 ms - -\u001b[0m\n","level":"info"}
 {"message":"\u001b[0mGET /login-login-module.js \u001b[36m304 \u001b[0m0.925 ms - -\u001b[0m\n","level":"info"}
 {"message":"\u001b[0mGET /login.jpg \u001b[36m304 \u001b[0m1.120 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m7.352 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /runtime.js \u001b[36m304 \u001b[0m1.769 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /polyfills.js \u001b[36m304 \u001b[0m1.772 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /styles.js \u001b[36m304 \u001b[0m0.867 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /vendor.js \u001b[36m304 \u001b[0m1.104 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /main.js \u001b[36m304 \u001b[0m0.451 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /login-login-module.js \u001b[36m304 \u001b[0m0.474 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /login.jpg \u001b[36m304 \u001b[0m0.449 ms - -\u001b[0m\n","level":"info"}
