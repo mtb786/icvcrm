@@ -2,9 +2,9 @@
   "name": "icvcrm",
   "version": "1.0.0",
   "description": "business product for product management",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js "
+    "start": "node server.js"
   },
   "engines": {
     "node": "8.11.3",
