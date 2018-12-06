@@ -11,6 +11,7 @@ const bodyParser = require('body-parser');
 const routes = require('./routes/routes');
 const app = express();
 const winston = require('./config/winston');
+const port = appConfig.port || process.env.PORT;
 // create a write stream (in append mode)
 // var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
 //  const dir = __dirname;
@@ -31,7 +32,7 @@ app.use(morgan('dev', { stream: winston.stream }));
 app.use('/', routes);
 app.use(express.static('../server/dist/icvcrm-web'));
 
-app.listen(appConfig.port,() => {
+app.listen(port,() => {
     console.log('App is started');
 });
 

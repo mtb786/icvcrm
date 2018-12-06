@@ -4,8 +4,11 @@
   "description": "business product for product management",
   "main": "index.js",
   "scripts": {
-    "test": "mocha && cd ../web/icvcrm-web/ && ng test",
     "start": "node server.js "
+  },
+  "engines": {
+    "node": ">=8.11.3",
+    "npm": ">=6.1.0"
   },
   "author": "manish bhavnani",
   "license": "ISC",
