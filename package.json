@@ -1,0 +1,21 @@
+{
+  "name": "icvcrm",
+  "version": "1.0.0",
+  "description": "business product for product management",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha && cd ../web/icvcrm-web/ && ng test",
+    "start": "node server.js "
+  },
+  "author": "manish bhavnani",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "2.1.0",
+    "bcrypt": "3.0.2",
+    "express": "4.16.4",
+    "jsonwebtoken": "8.4.0",
+    "mongoose": "5.3.11",
+    "morgan": "1.9.1",
+    "winston": "3.1.0"
+  }
+}
