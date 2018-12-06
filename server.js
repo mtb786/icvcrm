@@ -15,13 +15,13 @@ const winston = require('./config/winston');
 // var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
 //  const dir = __dirname;
 // // setup the logger
-const connectionString = `mongodb://${dbConfig.host}:${dbConfig.port}/${dbConfig.dbname}`;
-mongoose.connect(connectionString);
-mongoose.Promise = global.Promise;
-mongoose.connection.on('error', (err) => {
-    console.error(`MongoDB connection error: ${err}`);
-    process.exit(1);
-  });
+// const connectionString = `mongodb://${dbConfig.host}:${dbConfig.port}/${dbConfig.dbname}`;
+// mongoose.connect(connectionString);
+// mongoose.Promise = global.Promise;
+// mongoose.connection.on('error', (err) => {
+//     console.error(`MongoDB connection error: ${err}`);
+//     process.exit(1);
+//   });
 // support parsing of application/json type post data
 app.use(bodyParser.json());
 //support parsing of application/x-www-form-urlencoded post data

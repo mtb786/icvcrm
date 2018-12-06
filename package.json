@@ -4,7 +4,7 @@
   "description": "business product for product management",
   "main": "index.js",
   "scripts": {
-    "start": " npm cache clean --force && node server.js "
+    "start": "node server.js "
   },
   "engines": {
     "node": "8.11.3",
