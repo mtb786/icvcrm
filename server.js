@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(morgan('dev', { stream: winston.stream }));
 app.use('/', routes);
-app.use(express.static('../server/public'));
+app.use('/', express.static('../server/public'));
 
 app.listen(process.env.PORT || appConfig.port,() => {
     console.log('App is started');
