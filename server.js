@@ -16,12 +16,24 @@ const winston = require('./config/winston');
 //  const dir = __dirname;
 // // setup the logger
 // const connectionString = `mongodb://${dbConfig.host}:${dbConfig.port}/${dbConfig.dbname}`;
-// mongoose.connect(connectionString);
-// mongoose.Promise = global.Promise;
+const connectionString = `mongodb://devadmin:${encodeURIComponent('Qwerty123')}@ds113640.mlab.com:13640/icvdev`;
+// var connectionString =`mongodb://devadmin:${encodeURIComponent('Qwerty123')}@ds131551.mlab.com:31551/imageupload`; 
+// mongodb://<dbuser>:<dbpassword>@ds113640.mlab.com:13640/icvdev
+mongoose.connect(connectionString,  { useNewUrlParser: true } );
+mongoose.Promise = global.Promise;
 // mongoose.connection.on('error', (err) => {
 //     console.error(`MongoDB connection error: ${err}`);
 //     process.exit(1);
 //   });
+
+mongoose.connect(connectionString,  { useNewUrlParser: true } ,function(err) {
+    if(err) {
+        console.error('Database Unable To Connect');
+    } else {
+        console.log('Database Is Connected with mlab');
+    }
+});
+
 // support parsing of application/json type post data
 app.use(bodyParser.json());
 //support parsing of application/x-www-form-urlencoded post data
